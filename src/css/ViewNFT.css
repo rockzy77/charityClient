@@ -1,0 +1,124 @@
+.view-nft-section{
+    background: linear-gradient(to right, #70d8ff, #bd8bff);
+    min-height: 100vh;
+    width: 100%;
+    padding: 25px;
+}
+
+.nft-title{
+    font-size: 1.5rem;
+    color: #252525;
+    font-weight: 600;
+}
+
+.view-nft-section img{
+    height: 250px;
+    width: 250px;
+    border: 5px solid white;
+}
+
+.nft-row{
+    display: flex;
+}
+
+.nft-det{
+    padding: 25px;
+}
+
+.nft-det span{
+    position: relative;
+    left: 5px;
+}
+
+.nft-desc{
+    width: 60%;
+    position: relative;
+    top: 25px;
+    padding-left: 55px;
+}
+
+.nft-sec-section{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.514);
+    background-color: white;
+}
+
+.nft-sec-section h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nft-sec-section .small{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.nft-sec-section p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.nft-sec-section .colored{
+    color: rgb(0, 157, 248);
+}
+
+.nft-sec-section .nft-row p{
+    padding-left: 15px;
+}
+
+.nft-sec-section .nft-row p:first-child{
+    padding-left: 0;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0 5px;
+}
+
+.chartimg{
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.363);
+}
+
+.bg{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.363);
+}
+
+@media screen and (max-width: 1006px) {
+    
+    .out-row{
+       display: block !important;
+    }
+
+    .nft-desc{
+        padding: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 833px) {
+    .nft-sec-section{
+        width: 100%;
+    }
+
+    .chartimg{
+        width: 100% !important;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .view-nft-section{
+        padding: 10px;
+    }
+
+    .view-nft-section img{
+        height: 170px;
+        width: 170px;
+    }
+}

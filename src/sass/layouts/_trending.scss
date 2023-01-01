@@ -1,0 +1,89 @@
+.trending{
+    padding: 0 32px;
+    margin-top: 32px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid rgb(229, 232, 235);
+        margin-bottom: 16px;
+
+        &-right{
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 16px;
+
+            button{
+                border-radius: 12px;
+                border: 2px solid rgb(229, 232, 235);
+                padding: 8px 16px 8px 24px;
+                font-family: inherit;
+                font-weight: inherit;
+                font-size: inherit;
+                background-color: transparent;
+                margin-right: 16px;
+                // color: $text-color-primary;
+
+                i{
+                    color: rgb(138, 147, 155);
+                    font-size: 12px;
+                    margin-left: 6px;
+                }
+            }
+
+            a{
+                padding: 11px 24px;
+                border: 2px solid rgb(229, 232, 235);
+                border-radius: 12px;
+                color: $text-color-primary;
+            }
+        }
+    }
+}
+
+.react-tabs{
+
+    &__tab-list{
+        border: none;
+        margin: 0;
+    }
+
+    &__tab{
+        color: $text-color-secondary;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        border: none;
+        padding: 0 0 16px;
+        position: relative;
+
+        &:first-child{
+            margin-right: 40px;
+        }
+
+        // &::after{
+        //     transition: background-color 0.25s ease-in-out;
+        //     background-color: transparent;
+        //     bottom: 0%;
+        //     content: "";
+        //     display: block;
+        //     height: 2px;
+        //     left: 0px;
+        //     position: absolute;
+        //     width: 100%;
+        // }
+
+        &--selected{
+            color: rgb(53, 56, 64);
+
+            // &.react-tabs__tab::after{
+            //     background-color: $text-color-primary;
+            // }
+        }
+    }
+
+    &__tab-panel{
+        display: flex;
+        justify-content: space-between;
+    }
+}

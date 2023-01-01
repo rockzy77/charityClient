@@ -1,0 +1,99 @@
+.header{
+    padding: 0 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 120;
+    transition: all 0.2s ease;
+    background-color: transparent;
+
+    &-colored{
+        background-color: white;
+        box-shadow: rgb(229 232 235) 0px 1px 0px 0px;
+    }
+}
+
+.navbar{
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        display: inline-block;
+        line-height: 0;
+
+        &-img{
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        span{
+            color: $text-color-primary;
+            font-size: 22px;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+    }
+
+    &-collapse{
+        flex-grow: 0;
+    }
+
+    &__search{
+        width: 510px;
+        padding: 8px;
+        border: 2px solid rgb(229, 232, 235);
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        color: $text-color-primary;
+        margin-right: 40px;
+
+        span{
+            margin-right: 8px;
+
+            i{
+                color: $text-color-secondary;
+            }
+        }
+
+        &-input{
+            font: inherit;
+            width: 95%;
+            background-color: transparent;
+            outline: none;
+
+            &::placeholder{
+                color: $text-color-secondary;
+            }
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        
+        a{
+            color: $text-color-primary;
+            font-weight: 600;
+        }
+
+        ul{
+            display: flex;
+
+            li{
+                padding: 0 16px;
+            }
+        }
+
+        div{
+            a{
+                padding: 0 16px;
+                font-size: 26px
+            }
+        }
+    }
+}

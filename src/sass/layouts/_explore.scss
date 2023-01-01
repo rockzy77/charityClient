@@ -1,0 +1,123 @@
+
+
+
+.explore{
+
+    
+
+    padding: 79px 32px 0;
+    //
+
+    background-image: url("https://media1.giphy.com/media/2tNvsKkc0qFdNhJmKk/giphy.gif?cid=790b76113e3c76c29cae32a19a5d95ea45fb1f773e3f0104&rid=giphy.gif&ct=g");
+    background-position: 50% 50%;
+    background-size: cover;
+
+    
+
+    &__title{
+        margin: 32px 0 44px;
+        text-align: center;
+        font-size: 40px;
+        color: $text-color-primary;
+        font-weight: 700;
+        line-height: 56px;
+    }
+
+    &__slider{
+
+        .slick-prev::before{
+            content: '\2039';
+        }
+
+        .slick-next::before{
+            content: '\203A';
+        }
+
+        .slick-prev::before, .slick-next::before{
+            color: rgb(53, 56, 64);
+            line-height: 0;
+            opacity: 1;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .slick-prev, .slick-next{
+            background: white;
+            width: fit-content;
+            height: fit-content;
+            padding: 13px 16px;
+            border-radius: 50%;
+            box-shadow: rgb(0 0 0 / 15%) 0px 4px 10px;
+            z-index: 2;
+        }
+
+        
+
+        .slick-slide > div{
+            margin-right: 16px;
+        }
+      
+        .slick-list {
+            margin-right: -16px;
+        }
+
+        &-card{
+            overflow: hidden;
+            width: 309px;
+            height: 309px;
+            border-radius: 16px;
+
+            figure{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+                    border-radius: 16px;
+                }
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                border-radius: 16px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                object-fit: cover;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            figcaption{
+                color: white;
+                position: absolute;
+                gap: 2px;
+                bottom: 0px;
+                padding-bottom: 12px;
+                z-index: 1;
+                padding-left: 16px;
+
+                h5{
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                span{
+                    font-size: 14px;
+                }
+            }
+
+            &:hover img{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    
+}
+

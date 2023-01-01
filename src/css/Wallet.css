@@ -1,0 +1,192 @@
+.wallet-section{
+    background: linear-gradient(to right, #70d8ff, #bd8bff);
+    min-height: 100vh;
+    width: 100%;
+    padding: 25px;
+}
+
+
+.wallet-section h1{
+    color: #ff5850;
+    font-size: 2.3rem;
+}
+
+.wallet-section h2{
+    color: #2e2e2e;
+    font-size: 1.8rem;
+}
+
+.wallet-section .des{
+    color: rgb(46, 46, 46);
+}
+
+.qrcode{
+    padding: 10px;
+    margin-top: 55px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.459);
+}
+
+.qrcode p{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.qrcode img{
+    margin-top: 10px;
+    height: 250px;
+    width: 250px;
+}
+
+.wallet-things{
+    font-size: 1.3rem;
+    color: #ff5850;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wallet-things:hover{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.wallet-things p{
+    position: relative;
+    top: 15px;
+    padding-left: 15px;
+}
+
+.ltr button, .rtl button{
+    background-color: #ff5850;
+    width: 200px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.byc-p{
+    width: 60%;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.ltr button:hover, .rtl button{
+    background-color: #fc372d;
+    color: white;
+}
+
+.rtl{
+    direction: rtl;
+}
+
+.wallet-section input[type=checkbox]{
+    height: 15px;
+    width: 15px;
+    accent-color: #ff5850;
+}
+
+.agreespan{
+    position: relative;
+    bottom: 1.5px;
+    padding-left: 8px;
+}
+
+.agreespan a{
+    color: #ff5850;
+    font-weight: 600;
+}
+
+.wallet-section .continue{
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.295);
+}
+
+.wallet-section .continue:disabled{
+    width: 300px;
+    color: black;
+    background-color: #d60b00;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.295);
+}
+
+.qr1{
+    display: none;
+}
+
+.nfts{
+    width: 50%;
+}
+
+
+.nft-scan-sec{
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+.nfts .collection{
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+.nfts .collection__header span{
+    color: rgb(78, 78, 78);
+}
+
+@media screen and (max-width: 1075px){
+    .nfts{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 986px){
+    .nfts{
+        width: 100%;
+    }
+
+    .nft-scan-sec{
+        padding: 15px !important;
+    }
+
+    .wallet-section .nft-row{
+        display: block;
+       } 
+    
+       .qr2{
+        display: none;
+       }
+    
+       .qr1{
+        display: block;
+        margin-bottom: 25px;
+       }
+    
+}
+
+@media  screen and (max-width: 756px) {
+   
+   .nfts{
+    width: 100%;
+   }
+
+   .wallet-things{
+    display: flex !important;
+   }
+
+   .rtl{
+    direction:ltr;
+    text-align: center;
+   }
+
+   .ltr{
+    text-align: center;
+   }
+
+   .byc-p{
+    width: 100%;
+   }
+
+
+}

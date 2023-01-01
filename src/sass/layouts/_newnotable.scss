@@ -1,0 +1,95 @@
+.newnotable, .dreamers{
+    padding: 0 32px;
+    margin-top: 32px;
+
+    &__title{
+        margin-bottom: 24px;
+        font-size: 24px;
+        font-weight: 600;
+        color: $text-color-primary;
+    }
+
+    &__slider{
+
+        .slick-prev::before{
+            content: '\2039';
+        }
+
+        .slick-next::before{
+            content: '\203A';
+        }
+
+        .slick-prev::before, .slick-next::before{
+            color: rgb(53, 56, 64);
+            line-height: 0;
+            opacity: 1;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .slick-prev, .slick-next{
+            background: white;
+            width: fit-content;
+            height: fit-content;
+            padding: 13px 16px;
+            border-radius: 50%;
+            box-shadow: rgb(0 0 0 / 15%) 0px 4px 10px;
+            z-index: 2;
+        }
+
+        .slick-slide > div{
+            margin-right: 16px;
+        }
+      
+        .slick-list {
+            margin-right: -16px;
+        }
+
+        &-card{
+
+            figure{
+                width: 418px;
+                border-radius: 10px;
+                box-shadow: rgb(0 0 0 / 4%) 0px 2px 8px;
+            }
+
+            figure > img{
+                width: 100%;
+                height: 235px;
+                border-radius: 10px 10px 0 0;
+                object-fit: cover;
+            }
+
+            figcaption{
+                margin-top: -26px;
+                padding: 16px;
+                display: flex;
+                align-items: center;
+            }
+
+            .card-image{
+                width: 78px;
+                height: 78px;
+                border: 4px solid white;
+                border-radius: 16px;
+                box-shadow: rgb(0 0 0 / 8%) 0px 5px 10px;
+                margin-right: 16px;
+            }
+
+            .card-title{
+                font-weight: 600;
+                color: $text-color-primary;
+                margin-top: 13px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .verified-img{
+                width: 16px;
+                height: 16px;
+                margin: 13px 4px 0;
+            }
+        }
+    }
+}

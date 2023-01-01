@@ -1,0 +1,64 @@
+.collection{
+    min-width: calc(50% - 50px);
+
+    &__header{
+        display: flex;
+
+        span{
+            text-transform: uppercase;
+            color: $text-color-secondary;
+            font-size: 12px;
+            font-weight: 600;
+            width: 20%;
+            text-align: right;
+
+            &:first-child{
+                width: 60%;
+                text-align: left;
+            }
+
+        }
+    }
+
+    &__list{
+
+        &-item{
+            display: flex;
+            align-items: center;
+            padding: 12px 8px;
+            font-weight: 600;
+            color: $text-color-primary;
+
+            div{
+                width: 60%;
+                display: flex;
+                align-items: center;
+            }
+
+            .item-number{
+                width: 23px;
+                margin-right: 9px;
+                color: $text-color-secondary;
+                font-size: 20px;
+            }
+
+            .item-title{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            img{
+                width: 68px;
+                height: 68px;
+                margin-right: 24px;
+                border-radius: 10px;
+            }
+
+            & > span{
+                width: 20%;
+                text-align: right;
+            }
+        }
+    }
+}
